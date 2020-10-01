@@ -1,0 +1,164 @@
+openapi: 3.0.2
+info:
+  title: Apigee Asset
+  version: 1.0.0
+  description: Apigee Asset Management
+  contact:
+    email: lalevee@google.com
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+
+servers:
+  - url: 'https://emea-demo7-test.apigee.net/v1/ami'
+  
+paths:
+  /asset:
+  
+    get:
+      tags:
+        - asset
+      responses:
+        '200':
+          description: Asset list retrieved
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/asset-list'
+            
+    put:
+      tags:
+        - asset
+      requestBody:
+        description: Asset to be created
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/asset'
+      responses:
+        '200':
+          description: Asset retrieved
+        '400':
+          description: Invalid asset supplied
+        '404':
+          description: Asset not found
+
+    post:
+      tags:
+        - asset
+      requestBody:
+        description: Asset to be created
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/asset'
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Invalid asset supplied
+          
+  /asset/{name}:
+    parameters:
+      - in: path
+        name: name
+        schema:
+          type: string
+        required: true
+        description: The asset name
+        
+    get:
+      tags:
+        - asset
+      summary: Gets an asset by name
+      responses:
+        '200':
+          description: Asset retrieved
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/asset'
+        '404':
+          description: Asset not found
+          
+    delete:
+      tags:
+        - asset
+      summary: Delete the asset with the specified name
+      responses:
+        '200':
+          description: OK
+        '404':
+          description: Asset not found
+          
+components:
+  schemas:
+  
+    asset:
+      type: object
+      properties:
+        name:
+          description: asset unic name
+          type: string
+        title:
+          description: asset title
+          type: string
+        type:
+          description: Asset type
+          type: string
+          enum:
+            - html
+            - gSlides
+            - gDocs
+            - pdf
+        description:
+          type: string
+        link:
+          description: Asset URL
+          type: string
+        keywords:
+          description: list of keyword, separated by commas
+          type: string
+        sharable:
+          description: sharable with non Googler
+          type: boolean
+      example:   # Sample asset object
+        - id: "community"
+          title: "Apigee Community"
+          type: "web"
+          description: "Get answers, ideas, and support from the Apigee Community"
+          link: "https://community.apigee.com/"
+          keywords: "community, faq, question, howto"
+          sharable: false
+
+
+    asset-list:
+      type: array
+      items:
+          $ref: '#/components/schemas/asset'
+      example: 
+        - name: "community"
+          title: "Apigee Community"
+          type: "html"
+          description: "Get answers, ideas, and support from the Apigee Community"
+          link: "https://community.apigee.com/"
+          keywords: "community, faq, question, howto"
+          sharable: true
+        - name: "offering"
+          title: "Apigee Offerings"
+          type: "pdf"
+          description: "A comparison matrix of all available Apigee offerings"
+          link: "https://specs.apigee.com/files/Apigee_Offerings.pdf"
+          keywords: "offering, entitlement, standard, enterprise"
+          sharable: true
+      
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-apikey
+      in: header
+
+
+ 
