@@ -1,20 +1,21 @@
 openapi: 3.0.2
 info:
   title: Apigee Asset
-  version: 1.0.0
+  version: 1.0.0-oas3
   description: Apigee Asset Management
   contact:
     email: lalevee@google.com
   license:
     name: Apache 2.0
     url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
-
 servers:
   - url: 'https://emea-demo7-test.apigee.net/v1/ami'
+security:
+  - api_key: []
   
 paths:
+
   /asset:
-  
     get:
       tags:
         - asset
@@ -25,7 +26,6 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/asset-list'
-            
     put:
       tags:
         - asset
@@ -43,7 +43,6 @@ paths:
           description: Invalid asset supplied
         '404':
           description: Asset not found
-
     post:
       tags:
         - asset
@@ -59,8 +58,7 @@ paths:
           description: OK
         '400':
           description: Invalid asset supplied
-          
-  /asset/{name}:
+  '/asset/{name}':
     parameters:
       - in: path
         name: name
@@ -68,7 +66,6 @@ paths:
           type: string
         required: true
         description: The asset name
-        
     get:
       tags:
         - asset
@@ -79,10 +76,9 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/asset'
+                $ref: '#/components/schemas/assetobj'
         '404':
           description: Asset not found
-          
     delete:
       tags:
         - asset
@@ -92,13 +88,27 @@ paths:
           description: OK
         '404':
           description: Asset not found
-          
 components:
   schemas:
   
+    assetobj:
+      type: object
+      properties:
+        asset:
+          $ref: '#/components/schemas/asset'
+      
+      
     asset:
       type: object
       properties:
+        description:
+          type: string
+        keywords:
+          description: 'list of keyword, separated by commas'
+          type: string
+        link:
+          description: Asset URL
+          type: string
         name:
           description: asset unic name
           type: string
@@ -113,52 +123,45 @@ components:
             - gSlides
             - gDocs
             - pdf
-        description:
-          type: string
-        link:
-          description: Asset URL
-          type: string
-        keywords:
-          description: list of keyword, separated by commas
-          type: string
         sharable:
           description: sharable with non Googler
           type: boolean
       example:   # Sample asset object
-        - id: "community"
-          title: "Apigee Community"
-          type: "web"
-          description: "Get answers, ideas, and support from the Apigee Community"
-          link: "https://community.apigee.com/"
-          keywords: "community, faq, question, howto"
-          sharable: false
-
-
+        description: "Get answers, ideas, and support from the Apigee Community"
+        keywords: "community, faq, question, howto"
+        link: "https://community.apigee.com/"
+        name: "community"
+        title: "Apigee Community"
+        type: "web"
+        sharable: false
+        
     asset-list:
-      type: array
-      items:
-          $ref: '#/components/schemas/asset'
-      example: 
-        - name: "community"
-          title: "Apigee Community"
-          type: "html"
-          description: "Get answers, ideas, and support from the Apigee Community"
-          link: "https://community.apigee.com/"
-          keywords: "community, faq, question, howto"
-          sharable: true
-        - name: "offering"
-          title: "Apigee Offerings"
-          type: "pdf"
-          description: "A comparison matrix of all available Apigee offerings"
-          link: "https://specs.apigee.com/files/Apigee_Offerings.pdf"
-          keywords: "offering, entitlement, standard, enterprise"
-          sharable: true
-      
+      type: object
+      properties:
+        asset:
+          type: array
+          items:
+            $ref: '#/components/schemas/asset'
+      example:   # Sample asset object
+          asset:
+          - description: "Get answers, ideas, and support from the Apigee Community"
+            keywords: "community, faq, question, howto"
+            link: "https://community.apigee.com/"
+            name: "community"
+            title: "Apigee Community"
+            type: "web"
+            sharable: false
+          - description: "A comparison matrix of all available Apigee offerings"
+            keywords: "offering, entitlement, standard, enterprise"
+            link: "https://specs.apigee.com/files/Apigee_Offerings.pdf"
+            name: "offering"
+            title: "Apigee Offerings"
+            type: "pdf"
+            sharable: true
+          
   securitySchemes:
     api_key:
       type: apiKey
       name: x-apikey
       in: header
-
-
- 
+      
