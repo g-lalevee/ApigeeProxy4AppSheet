@@ -39,7 +39,7 @@
             <Description>Update a document by name</Description>
             <Request>
                 <Step>
-                    <Name>EV-getDocumentName</Name>
+                    <Name>EV-extractAssetName</Name>
                 </Step>
                 <Step>
                     <Name>EC-UpdateDataIntoFirestore</Name>

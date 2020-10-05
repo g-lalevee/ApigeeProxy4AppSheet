@@ -7,7 +7,7 @@
         <VersionInfo resourceName="EC-GetDataFromFirestore" version="SHA-512:612df310f2b1128e6b74fdc315e87532228840348dac1ccdfd9ff16bb6d9b6f0aa5e2f9750325e1b006c21066c3216cf452666b511552ce5cddabd02f5064566"/>
         <VersionInfo resourceName="EC-InsertDataIntoFirestore" version="SHA-512:c497cd8f0d379ce572b031508eff83ae5a6e24ddeaa5bdf2160d5a0b20f0503a097e57ac822ae65fed605d042008e4139190b5bf5816d7f4d7ef1a04b4b27414"/>
         <VersionInfo resourceName="EC-ListDataFromFirestore" version="SHA-512:51f99ca6dfde27a21358e29edbb9236a72dc7ef99b7031e824dcf221443de78f466512199078daf28a2f2a0406e4661b8fb4e98cbf118547c84de933ceff7def"/>
-        <VersionInfo resourceName="EC-UpdateDataIntoFirestore" version="SHA-512:dfd7269b4d045119f9f0514f15adf24db91594e6003e147e2981631659653317e2908ef1d64a55f21bba6b09052e587f7f7fde5c64c6a91952768d2a2ab430df"/>
+        <VersionInfo resourceName="EC-UpdateDataIntoFirestore" version="SHA-512:8916c5a61b90f660acb4ff383ca0f1cbd2060ee3baf3863cf8f095e14d7a2a11ee03a5bdbaaa48a3abab51a393f284a3ac0d84b6cabd64fb825975947c946d56"/>
         <VersionInfo resourceName="EV-GetTableFromURI" version="SHA-512:61b640f5cab9fcda8e032d1b87a8ff1da46eafc7989a987d03af7a02267b00e070cfcc40a828ef219c2c95efa5a6b9a5ecf3d12f7604c68277e12f24e8538d9b"/>
         <VersionInfo resourceName="EV-extractAssetName" version="SHA-512:609752d1a22bab6f919038d0b27c94c283638b682a5a718c3116a709d0308e90573dcc945af50507da541086f47e1f881f93fe90da2b366e9072f1733f23b90d"/>
         <VersionInfo resourceName="EV-getDocumentName" version="SHA-512:80f22ce40404047dfcdbb13221950208eb214a48576ad385182813018c3ef7f7f7d889442f9c23ba74644f08d1829e6eb90455f0cac362c97172b57767ade6a0"/>
@@ -16,7 +16,7 @@
         <VersionInfo resourceName="VAK-AppId" version="SHA-512:c0e0dc93068b3525aeb262c1d968057c561671951504d750720d86c9117ab25bf5cf45d60bdd4127504bc7b7175e795b66462e285cbb6f8ccec0f296a7797d7a"/>
     </Policies>
     <ProxyEndpoints>
-        <VersionInfo resourceName="default" version="SHA-512:4e4ed7a710eb3cbea8caf154b276358a54d4df0bdae35249c05483fbdfe4fa4fa2992f451ba04fd85cfba3300c4f1eaca83bcc44d4c2e36c6ff6ca5f81007cd9"/>
+        <VersionInfo resourceName="default" version="SHA-512:e9abc08abebb015cb2757c3950ecf288c7708982e460e05962fb7a201da9ff34187d98ecd7f2f1025c4c415c7ea56724a3ae5ff67787b92ccc308ee38b579ab1"/>
     </ProxyEndpoints>
     <Resources>
         <VersionInfo resourceName="jsc://JS-FormatPayload.js" version="SHA-512:5677bca2d30ee451220d1dfd8b64084d66034ba4c335d373b4965c8747ba3dd21b510ef0e8b99093d3815dd8b63eff6e673d89ab293ea6852886b8dae0292789"/>
