@@ -24,13 +24,15 @@ https://apigee.com
 - Configure Firestore extension 
 - Deploy Apigee proxy
 - Create/upload specification
-- Create Prooduct / Developer App.
+- Create Prooduct / Developer App. (copy API Key)
 
 ## 4- AppSheet 
 
 https://www.appsheet.com/
 
 - Create Apigee Data Source
+    - You can use swagger samples from this repo (asset, user)
+    - Use the API key copied just before
 - Create Application
 - Enjoy !
 
