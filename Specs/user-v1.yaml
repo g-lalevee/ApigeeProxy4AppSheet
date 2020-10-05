@@ -105,11 +105,11 @@ components:
           type: string
         first-name:
           type: string
+        last-name:
+          type: string
         name:
           type: string
           description: user unic full name (id)
-        last-name:
-          type: string
         role:
           type: string
  
