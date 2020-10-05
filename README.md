@@ -5,7 +5,7 @@ As easy as 1_2_3_4...
 
 ## 1- Firestore
 
-https://firebase.corp.google.com
+https://firebase.google.com
 
 - Create Collection
 
