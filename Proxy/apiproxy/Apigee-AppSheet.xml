@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="1" name="Apigee-AppSheet">
+    <Basepaths>/v1/asset</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1601934850281</CreatedAt>
+    <CreatedBy>defaultUser</CreatedBy>
+    <Description>Apigee Asset Management</Description>
+    <DisplayName>Apigee-Asset</DisplayName>
+    <LastModifiedAt>1601940143064</LastModifiedAt>
+    <LastModifiedBy>defaultUser</LastModifiedBy>
+    <ManifestVersion>SHA-512:fed1995e9544aa530472ec10f869cc071e7abb502d82629c5c5c9bf73c1dd1e3a18f8c29172183fedede5867a00a49a9ae33b5a39a1ae23b770f2a48583b8c97</ManifestVersion>
+    <Policies>
+        <Policy>AM_Payload</Policy>
+        <Policy>AM_StatusCode</Policy>
+        <Policy>EC-DeleteDataInFirestore</Policy>
+        <Policy>EC-GetDataFromFirestore</Policy>
+        <Policy>EC-InsertDataIntoFirestore</Policy>
+        <Policy>EC-ListDataFromFirestore</Policy>
+        <Policy>EC-UpdateDataIntoFirestore</Policy>
+        <Policy>EV-GetTableFromURI</Policy>
+        <Policy>EV-extractAssetName</Policy>
+        <Policy>EV-getDocumentName</Policy>
+        <Policy>JS-FormatPayload</Policy>
+        <Policy>RF-CatchExtensionError</Policy>
+        <Policy>VAK-AppId</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://JS-FormatPayload.js</Resource>
+    </Resources>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints/>
+</APIProxy>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="AM_Payload" version="SHA-512:bcf229575f376728ae16f542f2c541cb9e8af65e46363fd49af31e85828e105d8db802c4b9b9939fe67dbe404ece6cee9bb1faa5c988c62a8bf079276e4a8b26"/>
+        <VersionInfo resourceName="AM_StatusCode" version="SHA-512:1fe8631184d7b4bd662011da0c6196d8d60d3514f1436a969ae3b66a950156eebf8ae3902cf7edd8baebf56ed3a62afd3ccd80f41c509f409faec4af9cad37c1"/>
+        <VersionInfo resourceName="EC-DeleteDataInFirestore" version="SHA-512:45fd2ebacca1d86609ee805d1bfa49a056ae366e322837ec4a9d2c36bf4df1a1b1c7a2bb503bbfd2182de35e639c8382d2abdb790c614944dab5d867b04e23bb"/>
+        <VersionInfo resourceName="EC-GetDataFromFirestore" version="SHA-512:612df310f2b1128e6b74fdc315e87532228840348dac1ccdfd9ff16bb6d9b6f0aa5e2f9750325e1b006c21066c3216cf452666b511552ce5cddabd02f5064566"/>
+        <VersionInfo resourceName="EC-InsertDataIntoFirestore" version="SHA-512:c497cd8f0d379ce572b031508eff83ae5a6e24ddeaa5bdf2160d5a0b20f0503a097e57ac822ae65fed605d042008e4139190b5bf5816d7f4d7ef1a04b4b27414"/>
+        <VersionInfo resourceName="EC-ListDataFromFirestore" version="SHA-512:51f99ca6dfde27a21358e29edbb9236a72dc7ef99b7031e824dcf221443de78f466512199078daf28a2f2a0406e4661b8fb4e98cbf118547c84de933ceff7def"/>
+        <VersionInfo resourceName="EC-UpdateDataIntoFirestore" version="SHA-512:dfd7269b4d045119f9f0514f15adf24db91594e6003e147e2981631659653317e2908ef1d64a55f21bba6b09052e587f7f7fde5c64c6a91952768d2a2ab430df"/>
+        <VersionInfo resourceName="EV-GetTableFromURI" version="SHA-512:61b640f5cab9fcda8e032d1b87a8ff1da46eafc7989a987d03af7a02267b00e070cfcc40a828ef219c2c95efa5a6b9a5ecf3d12f7604c68277e12f24e8538d9b"/>
+        <VersionInfo resourceName="EV-extractAssetName" version="SHA-512:609752d1a22bab6f919038d0b27c94c283638b682a5a718c3116a709d0308e90573dcc945af50507da541086f47e1f881f93fe90da2b366e9072f1733f23b90d"/>
+        <VersionInfo resourceName="EV-getDocumentName" version="SHA-512:80f22ce40404047dfcdbb13221950208eb214a48576ad385182813018c3ef7f7f7d889442f9c23ba74644f08d1829e6eb90455f0cac362c97172b57767ade6a0"/>
+        <VersionInfo resourceName="JS-FormatPayload" version="SHA-512:f906be6f6aed30308cb15f7030b1224e04ff43ebb42d3c5d4f5ac79234e888224db9ecb2485daf98c016da4c1ef2977842000f102aab470b273b46b812dabdfd"/>
+        <VersionInfo resourceName="RF-CatchExtensionError" version="SHA-512:5ce0efd53a1063fc77bfce0fda7d46986cd02b8df192018640b788134fae363748a231b93a05f3d94c565dacf25df1a3dc318005a756248be4208e9a5f33cc5a"/>
+        <VersionInfo resourceName="VAK-AppId" version="SHA-512:c0e0dc93068b3525aeb262c1d968057c561671951504d750720d86c9117ab25bf5cf45d60bdd4127504bc7b7175e795b66462e285cbb6f8ccec0f296a7797d7a"/>
+    </Policies>
+    <ProxyEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:4e4ed7a710eb3cbea8caf154b276358a54d4df0bdae35249c05483fbdfe4fa4fa2992f451ba04fd85cfba3300c4f1eaca83bcc44d4c2e36c6ff6ca5f81007cd9"/>
+    </ProxyEndpoints>
+    <Resources>
+        <VersionInfo resourceName="jsc://JS-FormatPayload.js" version="SHA-512:5677bca2d30ee451220d1dfd8b64084d66034ba4c335d373b4965c8747ba3dd21b510ef0e8b99093d3815dd8b63eff6e673d89ab293ea6852886b8dae0292789"/>
+    </Resources>
+    <SharedFlows/>
+    <TargetEndpoints/>
+</Manifest>

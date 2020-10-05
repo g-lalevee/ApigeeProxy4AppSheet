@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables async="false" continueOnError="false" enabled="true" name="EV-GetTableFromURI">
+    <DisplayName>EV-GetTableFromURI</DisplayName>
+    <Source>request</Source>
+    <URIPath>
+        <Pattern ignoreCase="true">/{table}</Pattern>
+        <Pattern ignoreCase="true">/{table}/**</Pattern>
+    </URIPath>
+    <VariablePrefix>urirequest</VariablePrefix>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</ExtractVariables>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault async="false" continueOnError="false" enabled="true" name="RF-CatchExtensionError">
+    <DisplayName>RF-CatchExtensionError</DisplayName>
+    <FaultResponse>
+        <Set>
+            <Payload contentType="application/json">{"code":"500","message":"Error retrieving data from the server","info":"Check you request"}
+      </Payload>
+            <Headers>
+                <Header name="Access-Control-Allow-Origin">*</Header>
+                <Header name="Access-Control-Allow-Headers">*</Header>
+                <Header name="Access-Control-Max-Age">3628800</Header>
+                <Header name="Access-Control-Allow-Methods">*</Header>
+            </Headers>
+            <StatusCode>500</StatusCode>
+            <ReasonPhrase>Error retrieving data from the server</ReasonPhrase>
+        </Set>
+    </FaultResponse>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</RaiseFault>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables name="EV-getDocumentName">
+    <Source>request</Source>
+    <JSONPayload>
+        <Variable name="name" type="string">
+            <JSONPath>$.name</JSONPath>
+        </Variable>
+    </JSONPayload>
+    <VariablePrefix>document</VariablePrefix>
+</ExtractVariables>

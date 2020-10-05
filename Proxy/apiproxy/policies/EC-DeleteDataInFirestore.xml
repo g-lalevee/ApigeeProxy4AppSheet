@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ConnectorCallout async="false" continueOnError="true" enabled="true" name="EC-DeleteDataInFirestore">
+    <DisplayName>EC-DeleteDataInFirestore</DisplayName>
+    <Connector>circuit-breaker-data</Connector>
+    <Action>deleteDocument</Action>
+    <Input><![CDATA[{
+  "colName" : "{urirequest.table}",
+  "docName" : "{urirequest.id}"
+}]]></Input>
+    <Output parsed="false">extension-output</Output>
+</ConnectorCallout><!-- 
+Input JSON Schema for package=gcp-firestore version=1.2.0
+{"type":"object","properties":{"colName":{"type":"string"},"docName":{"type":"string"}},"required":["colName","docName"]}
+-->
+<!-- 
+Output JSON Schema for package=gcp-firestore version=1.2.0
+ There is no defined output.
+-->
