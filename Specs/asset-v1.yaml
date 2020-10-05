@@ -55,7 +55,7 @@ paths:
     get:
       tags:
         - asset
-      summary: Gets an asset by name
+      summary: Get an asset by name
       responses:
         '200':
           description: Asset retrieved
