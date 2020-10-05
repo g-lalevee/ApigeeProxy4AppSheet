@@ -19,6 +19,7 @@ paths:
     get:
       tags:
         - user
+      summary: List all users
       responses:
         '200':
           description: User list retrieved
@@ -26,26 +27,11 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/user-list'
-    put:
-      tags:
-        - user
-      requestBody:
-        description: User to be created
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/user'
-      responses:
-        '200':
-          description: User retrieved
-        '400':
-          description: Invalid user supplied
-        '404':
-          description: User not found
+
     post:
       tags:
         - user
+      summary: Insert an user 
       requestBody:
         description: User to be created
         required: true
@@ -77,6 +63,24 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/userobj'
+        '404':
+          description: User not found
+    put:
+      tags:
+        - user
+      summary: Update an user by name
+      requestBody:
+        description: User to be created
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/user'
+      responses:
+        '200':
+          description: User retrieved
+        '400':
+          description: Invalid user supplied
         '404':
           description: User not found
     delete:

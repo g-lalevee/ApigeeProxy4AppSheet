@@ -19,6 +19,7 @@ paths:
     get:
       tags:
         - asset
+      summary: List all assets
       responses:
         '200':
           description: Asset list retrieved
@@ -26,26 +27,10 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/asset-list'
-    put:
-      tags:
-        - asset
-      requestBody:
-        description: Asset to be created
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/asset'
-      responses:
-        '200':
-          description: Asset retrieved
-        '400':
-          description: Invalid asset supplied
-        '404':
-          description: Asset not found
     post:
       tags:
         - asset
+      summary: Insert an asset 
       requestBody:
         description: Asset to be created
         required: true
@@ -58,6 +43,7 @@ paths:
           description: OK
         '400':
           description: Invalid asset supplied
+          
   '/asset/{name}':
     parameters:
       - in: path
@@ -79,6 +65,24 @@ paths:
                 $ref: '#/components/schemas/assetobj'
         '404':
           description: Asset not found
+    put:
+      tags:
+        - asset
+      summary: Update an asset by name
+      requestBody:
+        description: Asset to be created
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/asset'
+      responses:
+        '200':
+          description: Asset retrieved
+        '400':
+          description: Invalid asset supplied
+        '404':
+          description: Asset not found 
     delete:
       tags:
         - asset
