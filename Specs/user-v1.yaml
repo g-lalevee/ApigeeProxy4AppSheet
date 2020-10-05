@@ -105,7 +105,7 @@ components:
           type: string
         first-name:
           type: string
-        full-name:
+        name:
           type: string
           description: user unic full name (id)
         last-name:
@@ -116,8 +116,8 @@ components:
       example:   # Sample user object
         email: "georges@sample.com"
         first-name: "Georges"
-        full-name: "ghabitbol"
         last-name: "Habitbol"
+        name: "ghabitbol"
         role: "admin"
         
     user-list:
@@ -131,13 +131,13 @@ components:
           user:
           - email: "georges@sample.com"
             first-name: "Georges"
-            full-name: "ghabitbol"
             last-name: "Habitbol"
+            name: "ghabitbol"
             role: "admin"
           - email: "xtof@sample.com"
             first-name: "Xtof"
-            full-name: "xraising"
             last-name: "Raising"
+            name: "xraising"
             role: "user"
           
   securitySchemes:
