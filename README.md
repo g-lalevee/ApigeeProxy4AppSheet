@@ -35,4 +35,5 @@ https://www.appsheet.com/
 - Enjoy !
 
 
-> NOTE:  currently, the document ID used to create a new document is a field named **name** (must be in data structure).
+> NOTE:  
+> Currently, the document ID used to create a new document is a field named >**name**< (must be in data structure).
