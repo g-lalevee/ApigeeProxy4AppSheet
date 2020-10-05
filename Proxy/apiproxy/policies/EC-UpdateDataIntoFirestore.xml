@@ -5,7 +5,7 @@
     <Action>setDocument</Action>
     <Input><![CDATA[{
         "colName" : "{urirequest.table}",
-        "docName" : "{document.name}",
+        "docName" : "{urirequest.id}",
         "data" : {request.content}
     }]]></Input>
     <Output parsed="false">extension-output</Output>
