@@ -1,0 +1,148 @@
+openapi: 3.0.2
+info:
+  title: Apigee AMI User
+  version: 1.0.0-oas3
+  description: Apigee User Management
+  contact:
+    email: lalevee@google.com
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+servers:
+  - url: 'https://emea-demo7-test.apigee.net/v1/ami'
+security:
+  - api_key: []
+  
+paths:
+
+  /user:
+    get:
+      tags:
+        - user
+      responses:
+        '200':
+          description: User list retrieved
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/user-list'
+    put:
+      tags:
+        - user
+      requestBody:
+        description: User to be created
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/user'
+      responses:
+        '200':
+          description: User retrieved
+        '400':
+          description: Invalid user supplied
+        '404':
+          description: User not found
+    post:
+      tags:
+        - user
+      requestBody:
+        description: User to be created
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/user'
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Invalid user supplied
+  '/user/{name}':
+    parameters:
+      - in: path
+        name: name
+        schema:
+          type: string
+        required: true
+        description: The user name
+    get:
+      tags:
+        - user
+      summary: Gets an user by name
+      responses:
+        '200':
+          description: User retrieved
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/userobj'
+        '404':
+          description: User not found
+    delete:
+      tags:
+        - user
+      summary: Delete the user with the specified name
+      responses:
+        '200':
+          description: OK
+        '404':
+          description: User not found
+components:
+  schemas:
+  
+    userobj:
+      type: object
+      properties:
+        user:
+          $ref: '#/components/schemas/user'
+      
+      
+    user:
+      type: object
+      properties:
+        email:
+          type: string
+        first-name:
+          type: string
+        full-name:
+          type: string
+          description: user unic full name (id)
+        last-name:
+          type: string
+        role:
+          type: string
+ 
+      example:   # Sample user object
+        email: "georges@sample.com"
+        first-name: "Georges"
+        full-name: "ghabitbol"
+        last-name: "Habitbol"
+        role: "admin"
+        
+    user-list:
+      type: object
+      properties:
+        user:
+          type: array
+          items:
+            $ref: '#/components/schemas/user'
+      example:   # Sample user object
+          user:
+          - email: "georges@sample.com"
+            first-name: "Georges"
+            full-name: "ghabitbol"
+            last-name: "Habitbol"
+            role: "admin"
+          - email: "xtof@sample.com"
+            first-name: "Xtof"
+            full-name: "xraising"
+            last-name: "Raising"
+            role: "user"
+          
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-apikey
+      in: header
+      
