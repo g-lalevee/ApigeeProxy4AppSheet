@@ -11,6 +11,8 @@ https://console.firebase.google.com/
 
 - [Create Collection](https://firebase.google.com/docs/firestore/quickstart)
 
+![Firestore](Images/firestore.jpg)
+
 ## 2- Google Cloud
 
 https://console.cloud.google.com
@@ -26,6 +28,8 @@ https://apigee.com
 - Create/upload specification
 - Create Prooduct / Developer App. (copy API Key)
 
+![Apigee](Images/apigee.jpg)
+
 ## 4- AppSheet 
 
 https://www.appsheet.com/
@@ -35,6 +39,8 @@ https://www.appsheet.com/
     - Use the API key copied just before
 - Create Application
 - Enjoy !
+
+![AppSheet](Images/appsheeet.jpg)
 
 > NOTE:  
 > Currently, the document ID used to create a new document is a field named >**ID**< (mandatory in data structure/json payload).
