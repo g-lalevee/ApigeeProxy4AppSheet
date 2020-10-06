@@ -6,9 +6,9 @@
     <CreatedBy>defaultUser</CreatedBy>
     <Description>Apigee Asset Management</Description>
     <DisplayName>Apigee-Asset</DisplayName>
-    <LastModifiedAt>1601941383166</LastModifiedAt>
+    <LastModifiedAt>1601990190419</LastModifiedAt>
     <LastModifiedBy>defaultUser</LastModifiedBy>
-    <ManifestVersion>SHA-512:959d37334dc5a752240f08da0561a4a5c656f22a045007ee79822ab346bdee3db992d80e58ee63e212c09fe2e3657cc1e14b674b8d833369ea35b5a2eb5d68bb</ManifestVersion>
+    <ManifestVersion>SHA-512:078dba8d74fc5c3e3af3d2bb38dfdba0695746b03606f75ea66fb3259937e92c58b3bb99db8590497bec61ed1396dace33d18d4704bf56e1563daae29b50b82d</ManifestVersion>
     <Policies>
         <Policy>AM_Payload</Policy>
         <Policy>AM_StatusCode</Policy>

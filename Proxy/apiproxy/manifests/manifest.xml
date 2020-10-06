@@ -16,7 +16,7 @@
         <VersionInfo resourceName="VAK-AppId" version="SHA-512:c0e0dc93068b3525aeb262c1d968057c561671951504d750720d86c9117ab25bf5cf45d60bdd4127504bc7b7175e795b66462e285cbb6f8ccec0f296a7797d7a"/>
     </Policies>
     <ProxyEndpoints>
-        <VersionInfo resourceName="default" version="SHA-512:e9abc08abebb015cb2757c3950ecf288c7708982e460e05962fb7a201da9ff34187d98ecd7f2f1025c4c415c7ea56724a3ae5ff67787b92ccc308ee38b579ab1"/>
+        <VersionInfo resourceName="default" version="SHA-512:081440bf676c098055ffc6a4d1639f9b3ceaf2587c7677544d6e4dfd343e3d66ca4a61ae405b226825a01da3019aeab01517579c8ed4537ffe2f9e4afb6d394c"/>
     </ProxyEndpoints>
     <Resources>
         <VersionInfo resourceName="jsc://JS-FormatPayload.js" version="SHA-512:5677bca2d30ee451220d1dfd8b64084d66034ba4c335d373b4965c8747ba3dd21b510ef0e8b99093d3815dd8b63eff6e673d89ab293ea6852886b8dae0292789"/>

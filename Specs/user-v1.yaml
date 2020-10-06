@@ -1,15 +1,15 @@
 openapi: 3.0.2
 info:
-  title: Apigee AMI User
+  title: Apigee Firestore User
   version: 1.0.0-oas3
-  description: Apigee User Management
+  description: Apigee Firestore User Management
   contact:
     email: lalevee@google.com
   license:
     name: Apache 2.0
     url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
 servers:
-  - url: 'https://emea-demo7-test.apigee.net/v1/ami'
+  - url: 'https://emea-demo7-test.apigee.net/v1/firestore'
 security:
   - api_key: []
   
@@ -44,18 +44,18 @@ paths:
           description: OK
         '400':
           description: Invalid user supplied
-  '/user/{name}':
+  '/user/{id}':
     parameters:
       - in: path
-        name: name
+        name: id
         schema:
           type: string
         required: true
-        description: The user name
+        description: The user id
     get:
       tags:
         - user
-      summary: Get an user by name
+      summary: Get an user by id
       responses:
         '200':
           description: User retrieved
@@ -68,7 +68,7 @@ paths:
     put:
       tags:
         - user
-      summary: Update an user by name
+      summary: Update an user by id
       requestBody:
         description: User to be created
         required: true
@@ -86,7 +86,7 @@ paths:
     delete:
       tags:
         - user
-      summary: Delete the user with the specified name
+      summary: Delete the user by id
       responses:
         '200':
           description: OK
@@ -109,19 +109,19 @@ components:
           type: string
         first-name:
           type: string
+        id:
+          type: string
+          description: user (unique) id
         last-name:
           type: string
-        name:
-          type: string
-          description: user unic full name (id)
         role:
           type: string
  
       example:   # Sample user object
         email: "georges@sample.com"
         first-name: "Georges"
+        id: "ghabitbol"
         last-name: "Habitbol"
-        name: "ghabitbol"
         role: "admin"
         
     user-list:
@@ -135,13 +135,13 @@ components:
           user:
           - email: "georges@sample.com"
             first-name: "Georges"
+            id: "ghabitbol"
             last-name: "Habitbol"
-            name: "ghabitbol"
             role: "admin"
           - email: "xtof@sample.com"
             first-name: "Xtof"
+            id: "xraising"
             last-name: "Raising"
-            name: "xraising"
             role: "user"
           
   securitySchemes:

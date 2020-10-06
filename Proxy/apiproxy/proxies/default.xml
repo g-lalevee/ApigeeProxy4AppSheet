@@ -96,7 +96,7 @@
         </Response>
     </PostFlow>
     <HTTPProxyConnection>
-        <BasePath>/v1/ami</BasePath>
+        <BasePath>/v1/firestore</BasePath>
         <VirtualHost>secure</VirtualHost>
     </HTTPProxyConnection>
     <RouteRule name="default"/>

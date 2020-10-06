@@ -1,15 +1,15 @@
 openapi: 3.0.2
 info:
-  title: Apigee Asset
+  title: Apigee Firestore Asset
   version: 1.0.0-oas3
-  description: Apigee Asset Management
+  description: Apigee Firestore Asset Management
   contact:
     email: lalevee@google.com
   license:
     name: Apache 2.0
     url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
 servers:
-  - url: 'https://emea-demo7-test.apigee.net/v1/ami'
+  - url: 'https://emea-demo7-test.apigee.net/v1/firestore'
 security:
   - api_key: []
   
@@ -44,18 +44,18 @@ paths:
         '400':
           description: Invalid asset supplied
           
-  '/asset/{name}':
+  '/asset/{id}':
     parameters:
       - in: path
-        name: name
+        name: id
         schema:
           type: string
         required: true
-        description: The asset name
+        description: The asset id
     get:
       tags:
         - asset
-      summary: Get an asset by name
+      summary: Get an asset by id
       responses:
         '200':
           description: Asset retrieved
@@ -68,7 +68,7 @@ paths:
     put:
       tags:
         - asset
-      summary: Update an asset by name
+      summary: Update an asset by id
       requestBody:
         description: Asset to be created
         required: true
@@ -86,7 +86,7 @@ paths:
     delete:
       tags:
         - asset
-      summary: Delete the asset with the specified name
+      summary: Delete the asset by id
       responses:
         '200':
           description: OK
@@ -107,14 +107,14 @@ components:
       properties:
         description:
           type: string
+        id:
+          description: asset unique id
+          type: string
         keywords:
           description: 'list of keyword, separated by commas'
           type: string
         link:
           description: Asset URL
-          type: string
-        name:
-          description: asset unic name
           type: string
         title:
           description: asset title
@@ -132,9 +132,9 @@ components:
           type: boolean
       example:   # Sample asset object
         description: "Get answers, ideas, and support from the Apigee Community"
+        id: "community"
         keywords: "community, faq, question, howto"
         link: "https://community.apigee.com/"
-        name: "community"
         title: "Apigee Community"
         type: "web"
         sharable: false
@@ -149,16 +149,16 @@ components:
       example:   # Sample asset object
           asset:
           - description: "Get answers, ideas, and support from the Apigee Community"
+            id: "community"
             keywords: "community, faq, question, howto"
             link: "https://community.apigee.com/"
-            name: "community"
             title: "Apigee Community"
             type: "web"
             sharable: false
           - description: "A comparison matrix of all available Apigee offerings"
+            id: "offering"
             keywords: "offering, entitlement, standard, enterprise"
             link: "https://specs.apigee.com/files/Apigee_Offerings.pdf"
-            name: "offering"
             title: "Apigee Offerings"
             type: "pdf"
             sharable: true
