@@ -11,6 +11,9 @@ https://console.firebase.google.com/
 
 - [Create Collection](https://firebase.google.com/docs/firestore/quickstart)
 
+> NOTE:  
+> Currently, the document ID used to create a new document is a field named >**ID**< (mandatory in data structure/json payload).
+
 ![Firestore](Images/firestore.jpg)
 
 ## 2- Google Cloud
@@ -41,6 +44,3 @@ https://www.appsheet.com/
 - Enjoy !
 
 ![AppSheet](Images/appsheet.jpg)
-
-> NOTE:  
-> Currently, the document ID used to create a new document is a field named >**ID**< (mandatory in data structure/json payload).
