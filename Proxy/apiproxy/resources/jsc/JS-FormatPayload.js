@@ -1,3 +1,4 @@
+
 var resource = context.getVariable("urirequest.table");
 var tableRecords = JSON.parse(context.getVariable("extension-output"));
 
@@ -22,3 +23,4 @@ if (Array.isArray(tableRecords)) {
 var result = '{"' + resource+'":' + JSON.stringify(tableRecords) + '}';
 
 context.setVariable("result", result);
+
