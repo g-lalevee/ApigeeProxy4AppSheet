@@ -38,4 +38,4 @@ https://www.appsheet.com/
 
 
 > NOTE:  
-> Currently, the document ID used to create a new document is a field named >**name**< (must be in data structure).
+> Currently, the document ID used to create a new document is a field named >**ID**< (mandatory in data structure/json payload).
