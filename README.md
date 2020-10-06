@@ -1,6 +1,6 @@
 [![PyPI status](https://img.shields.io/pypi/status/ansicolortags.svg)](https://pypi.python.org/pypi/ansicolortags/) 
 
-# Appsheet / Apigee / Firestore demo
+#  Apigee: Firestore Proxy for AppSheet
 
 CRUD Apigee proxy to be used by AppSheet to use Firestore as Data Source.<br>
 As easy as 1_2_3_4...
