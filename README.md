@@ -7,8 +7,8 @@ CRUD Apigee proxy to be used by AppSheet to use Firestore as Data Source.
 ![Overview](Images/overview.jpg)
 
 
-- One single API Proxy can provides access to Firestore collections of your GCP Project.
-- Open APi Specification Path defines Firestore Collection Name defines 
+- One single API Proxy can provides access to Firestore collections of one GCP Project.
+- Open APi Specification Path dynamically defines the name of the Firestore collection as well as the name of the table in AppSheet Application
 
 As easy as 1_2_3_4...
 
