@@ -2,7 +2,7 @@
 
 # Appsheet / Apigee / Firestore demo
 
-CRUD Apigee proxy to be used by AppSheet to use Firestore as Data Source.
+CRUD Apigee proxy to be used by AppSheet to use Firestore as Data Source.<br>
 As easy as 1_2_3_4...
 
 ## 1- Firestore
