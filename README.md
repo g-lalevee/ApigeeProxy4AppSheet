@@ -21,7 +21,7 @@ https://console.cloud.google.com
 
 https://apigee.com
 
-- Configure Firestore extension (https://docs.apigee.com/api-platform/reference/extensions/google-cloud-firestore/google-cloud-firestore-extension-120)
+- Configure [Firestore extension](https://docs.apigee.com/api-platform/reference/extensions/google-cloud-firestore/google-cloud-firestore-extension-120)
 - Deploy Apigee proxy
 - Create/upload specification
 - Create Prooduct / Developer App. (copy API Key)
