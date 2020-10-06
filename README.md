@@ -9,13 +9,13 @@ As easy as 1_2_3_4...
 
 https://console.firebase.google.com/
 
-- Create Collection
+- [Create Collection](https://firebase.google.com/docs/firestore/quickstart)
 
 ## 2- Google Cloud
 
 https://console.cloud.google.com
 
-- Create Service Account for Firestore
+- [Create Service Account for Firestore](https://firebase.google.com/docs/admin/setup#add_firebase_to_your_app)
 
 ## 3- Apigee 
 
@@ -30,7 +30,7 @@ https://apigee.com
 
 https://www.appsheet.com/
 
-- Create Apigee Data Source
+- Create [Apigee Data Source](https://www.appsheet.com/Account/Account/Sources)
     - You can use swagger samples from this repo (asset, user)
     - Use the API key copied just before
 - Create Application
