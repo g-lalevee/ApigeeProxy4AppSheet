@@ -36,6 +36,5 @@ https://www.appsheet.com/
 - Create Application
 - Enjoy !
 
-
 > NOTE:  
 > Currently, the document ID used to create a new document is a field named >**ID**< (mandatory in data structure/json payload).
