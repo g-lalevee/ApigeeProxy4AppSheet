@@ -12,7 +12,7 @@ https://console.firebase.google.com/
 - [Create Collection](https://firebase.google.com/docs/firestore/quickstart)
 
 > NOTE:  
-> Currently, the document ID used to create a new document is a field named >**ID**< (mandatory in data structure/json payload).
+> Currently, the document ID used to create a new document (mandatory) is a field named **ID** : don't forget it in data structure/json payload).
 
 ![Firestore](Images/firestore.jpg)
 
