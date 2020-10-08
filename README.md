@@ -27,8 +27,9 @@ https://console.firebase.google.com/
 https://console.cloud.google.com
 - [Create Service Account for Firestore](https://firebase.google.com/docs/admin/setup#add_firebase_to_your_app)
 
-> Note:
-> To be done only once for the first collection of the GCP Project. To be redone for each project
+> NOTE:  
+> To be done only once for the first collection of the GCP Project  
+> To be redone for each project (one extension = 1 GCP project)
 
 ## 3- Apigee 
 
@@ -38,8 +39,9 @@ https://apigee.com
 - Create/upload specification
 - Create API Product / Developer App. (copy API Key)
 
-> Notee:
-> To be done only once for the first collection of the GCP Project. To be redone for each project (one extension = 1 GCP project)
+> NOTE:  
+> To be done only once for the first collection of the GCP Project  
+> To be redone for each project (one extension = 1 GCP project)
 
 ![Apigee](Images/apigee.jpg)
 
