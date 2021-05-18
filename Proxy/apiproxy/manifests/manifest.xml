@@ -10,7 +10,7 @@
         <VersionInfo resourceName="EC-UpdateDataIntoFirestore" version="SHA-512:8916c5a61b90f660acb4ff383ca0f1cbd2060ee3baf3863cf8f095e14d7a2a11ee03a5bdbaaa48a3abab51a393f284a3ac0d84b6cabd64fb825975947c946d56"/>
         <VersionInfo resourceName="EV-GetTableFromURI" version="SHA-512:61b640f5cab9fcda8e032d1b87a8ff1da46eafc7989a987d03af7a02267b00e070cfcc40a828ef219c2c95efa5a6b9a5ecf3d12f7604c68277e12f24e8538d9b"/>
         <VersionInfo resourceName="EV-extractAssetName" version="SHA-512:609752d1a22bab6f919038d0b27c94c283638b682a5a718c3116a709d0308e90573dcc945af50507da541086f47e1f881f93fe90da2b366e9072f1733f23b90d"/>
-        <VersionInfo resourceName="EV-getDocumentName" version="SHA-512:80f22ce40404047dfcdbb13221950208eb214a48576ad385182813018c3ef7f7f7d889442f9c23ba74644f08d1829e6eb90455f0cac362c97172b57767ade6a0"/>
+        <VersionInfo resourceName="EV-getDocumentName" version="SHA-512:a3362be6568031e56dfa7e1ffa991618a6d753c60b41e05c94262d57f4df7999c15ef40c2cdf0f67a44181f57e59433d397fa607d50248221dc029944187fce2"/>
         <VersionInfo resourceName="JS-FormatPayload" version="SHA-512:f906be6f6aed30308cb15f7030b1224e04ff43ebb42d3c5d4f5ac79234e888224db9ecb2485daf98c016da4c1ef2977842000f102aab470b273b46b812dabdfd"/>
         <VersionInfo resourceName="RF-CatchExtensionError" version="SHA-512:5ce0efd53a1063fc77bfce0fda7d46986cd02b8df192018640b788134fae363748a231b93a05f3d94c565dacf25df1a3dc318005a756248be4208e9a5f33cc5a"/>
         <VersionInfo resourceName="VAK-AppId" version="SHA-512:c0e0dc93068b3525aeb262c1d968057c561671951504d750720d86c9117ab25bf5cf45d60bdd4127504bc7b7175e795b66462e285cbb6f8ccec0f296a7797d7a"/>
@@ -19,7 +19,7 @@
         <VersionInfo resourceName="default" version="SHA-512:081440bf676c098055ffc6a4d1639f9b3ceaf2587c7677544d6e4dfd343e3d66ca4a61ae405b226825a01da3019aeab01517579c8ed4537ffe2f9e4afb6d394c"/>
     </ProxyEndpoints>
     <Resources>
-        <VersionInfo resourceName="jsc://JS-FormatPayload.js" version="SHA-512:5677bca2d30ee451220d1dfd8b64084d66034ba4c335d373b4965c8747ba3dd21b510ef0e8b99093d3815dd8b63eff6e673d89ab293ea6852886b8dae0292789"/>
+        <VersionInfo resourceName="jsc://JS-FormatPayload.js" version="SHA-512:d65eb3003b4f5eabe1c8821c8263dbe0302edc51186ca85dfc2e9ccc7774fbb403e8276426927c200545bde39cd6c5096d192bca4ca49640f3142169d982ae4a"/>
     </Resources>
     <SharedFlows/>
     <TargetEndpoints/>

@@ -3,7 +3,7 @@
     <Source>request</Source>
     <JSONPayload>
         <Variable name="name" type="string">
-            <JSONPath>$.name</JSONPath>
+            <JSONPath>$.id</JSONPath>
         </Variable>
     </JSONPayload>
     <VariablePrefix>document</VariablePrefix>
