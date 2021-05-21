@@ -1,0 +1,153 @@
+openapi: 3.0.2
+info:
+  title: Apigee Firestore User
+  version: 1.0.0-oas3
+  description: Apigee Firestore User Management
+  contact:
+    email: lalevee@google.com
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+servers:
+  - url: 'https://emea-demo7-test.apigee.net/v1/firestore'
+security:
+  - api_key: []
+  
+paths:
+
+  /user:
+    get:
+      tags:
+        - user
+      summary: List all users
+      responses:
+        '200':
+          description: User list retrieved
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/user-list'
+      x-filter: type:RHS-Colon 
+
+    post:
+      tags:
+        - user
+      summary: Insert an user 
+      requestBody:
+        description: User to be created
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/user'
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Invalid user supplied
+  '/user/{id}':
+    parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+        description: The user id
+    get:
+      tags:
+        - user
+      summary: Get an user by id
+      responses:
+        '200':
+          description: User retrieved
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/userobj'
+        '404':
+          description: User not found
+    put:
+      tags:
+        - user
+      summary: Update an user by id
+      requestBody:
+        description: User to be created
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/user'
+      responses:
+        '200':
+          description: User retrieved
+        '400':
+          description: Invalid user supplied
+        '404':
+          description: User not found
+    delete:
+      tags:
+        - user
+      summary: Delete the user by id
+      responses:
+        '200':
+          description: OK
+        '404':
+          description: User not found
+components:
+  schemas:
+  
+    userobj:
+      type: object
+      properties:
+        user:
+          $ref: '#/components/schemas/user'
+      
+      
+    user:
+      type: object
+      properties:
+        email:
+          type: string
+        first-name:
+          type: string
+        id:
+          type: string
+          description: user (unique) id
+        last-name:
+          type: string
+        role:
+          type: string
+ 
+      example:   # Sample user object
+        email: "georges@sample.com"
+        first-name: "Georges"
+        id: "ghabitbol"
+        last-name: "Habitbol"
+        role: "admin"
+        
+    user-list:
+      type: object
+      properties:
+        user:
+          type: array
+          items:
+            $ref: '#/components/schemas/user'
+      example:   # Sample user object
+          user:
+          - email: "georges@sample.com"
+            first-name: "Georges"
+            id: "ghabitbol"
+            last-name: "Habitbol"
+            role: "admin"
+          - email: "xtof@sample.com"
+            first-name: "Xtof"
+            id: "xraising"
+            last-name: "Raising"
+            role: "user"
+          
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-apikey
+      in: header
+      
