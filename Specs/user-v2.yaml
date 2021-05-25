@@ -28,7 +28,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/user-list'
       x-filter:
-        type:RHS-Colon 
+        type: RHS-Colon 
 
     post:
       tags:
