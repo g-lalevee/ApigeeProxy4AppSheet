@@ -9,7 +9,7 @@ info:
     name: Apache 2.0
     url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
 servers:
-  - url: 'https://emea-demo7-test.apigee.net/v1/firestore'
+  - url: 'https://34.117.38.184.nip.io/v2/firestore'
 security:
   - api_key: []
   
